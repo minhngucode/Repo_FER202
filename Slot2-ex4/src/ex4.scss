@@ -1,0 +1,29 @@
+$navbar-bg-color: #555;
+$link-color: white;
+$home-bg-color: green;
+$login-bg-color: black;
+
+.navbar-container {
+  background-color: $navbar-bg-color;
+  padding: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  justify-content: flex-start;
+
+  .nav-link {
+    color: $link-color;
+    padding: 10px 20px;
+    text-decoration: none;
+
+    &.home-link {
+      background-color: $home-bg-color;
+    }
+
+    &.login-link {
+      background-color: $login-bg-color;
+    }
+  }
+}
