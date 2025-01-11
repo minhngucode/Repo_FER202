@@ -118,6 +118,7 @@ function App() {
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <div style={{ padding: "20px", display: "inline-block", borderRadius: "10px" }}>
           <img src={logo} alt="logo" style={{ width: "250px", height: "250px" }} />
+          <p style={{color: "#23D6FE"}}>This is the React logo!</p>
           <p style={{ fontStyle: "italic", fontSize: "0.8rem" }}>
             (I don’t know why it is here either)
           </p>
