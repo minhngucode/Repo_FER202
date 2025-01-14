@@ -235,6 +235,7 @@ function App() {
       ))}
       ____________________________________________________
       <h1>Sum of age: <span>{sumAge}</span></h1>
+
       ____________________________________________________
       <h1>New Company Object</h1>
       <p>Company Name: {newCompany.name}</p>
