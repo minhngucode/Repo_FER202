@@ -1,17 +1,17 @@
 import { persons } from "./PersonList";
 
 function calculateAverageAgeByOccupation(persons) {
-    const occupationAges = persons.reduce((acc, person) => {
+    const occupationAges = persons.reduce((value, person) => {
         const { occupation, age } = person;
 
-        if (!acc[occupation]) {
-            acc[occupation] = { totalAge: 0, count: 0 };
+        if (!value[occupation]) {
+            value[occupation] = { totalAge: 0, count: 0 };
         }
 
-        acc[occupation].totalAge += age;
-        acc[occupation].count += 1;
+        value[occupation].totalAge += age;
+        value[occupation].count += 1;
 
-        return acc;
+        return value;
     }, {});
     const averageAges = {};
     for (const occupation in occupationAges) {
