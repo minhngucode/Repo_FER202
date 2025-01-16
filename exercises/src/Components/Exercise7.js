@@ -3,7 +3,7 @@ import { persons } from "./PersonList";
 const sortByOccupation = [...persons].sort((a, b) => {
     if (a.occupation > b.occupation) return 1;
     if (a.occupation < b.occupation) return -1;
-    return 0;
+    return a.age - b.age;
 })
 
 // sort using localeCompare
@@ -13,7 +13,7 @@ const sortByAge = [...persons].sort((a, b) => a.age - b.age)
 function Exercise7() {
     return (
         <>
-            <h1>Sort by occupation</h1>
+            <h1>Sort by occupation and age</h1>
             <ul>
                 {sortByOccupation.map((person, index) => (
                     <li key={index}>
@@ -21,14 +21,14 @@ function Exercise7() {
                     </li>
                 ))}
             </ul>
-            <h1>Sort by age</h1>
+            {/* <h1>Sort by age</h1>
             <ul>
                 {sortByAge.map((person, index) => (
                     <li key={index}>
                         {person.name} - {person.age} - {person.occupation}
                     </li>
                 ))}
-            </ul>
+            </ul> */}
         </>
     )
 }
