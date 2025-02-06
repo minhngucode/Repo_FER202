@@ -2,6 +2,7 @@ import menu1 from '../Pizza_Images/menu1.jpg';
 import menu2 from '../Pizza_Images/menu2.jpg';
 import menu3 from '../Pizza_Images/menu3.jpg';
 import menu4 from '../Pizza_Images/menu4.jpg';
+
 const Menu = () => {
     const menuItems = [
         { name: "Margherita Pizza", price: "$40.00", salePrice: "$24.00", image: menu1, tag: "SALE" },
@@ -16,12 +17,21 @@ const Menu = () => {
             <div className="row">
                 {menuItems.map((item, index) => (
                     <div className="col-md-3" key={index}>
-                        <div className="card">
-                            {item.tag && <span className="badge bg-warning text-dark position-absolute top-0 start-0">{item.tag}</span>}
+                        <div className="card position-relative">
+                            {item.tag && <span className="badge bg-warning text-dark position-absolute top-0 start-0 m-1">{item.tag}</span>}
                             <img src={item.image} className="card-img-top" alt={item.name} />
                             <div className="card-body text-center">
                                 <h5>{item.name}</h5>
-                                <p>{item.salePrice ? <><del>{item.price}</del> {item.salePrice}</> : item.price}</p>
+                                <p>
+                                    {item.salePrice ? (
+                                        <>
+                                            <del style={{ color: 'black' }}>{item.price}</del>{' '}
+                                            <span style={{ color: 'orange'}}>{item.salePrice}</span>
+                                        </>
+                                    ) : (
+                                        <span style={{ color: 'orange'}}>{item.price}</span>
+                                    )}
+                                </p>
                                 <button className="btn btn-dark" style={{ width: '100%' }}>Buy</button>
                             </div>
                         </div>
