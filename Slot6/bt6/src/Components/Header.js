@@ -1,4 +1,4 @@
-import banner from '../Pizza_Images/banner.png';
+import banner from '../Images/banner.png';
 
 
 import 'bootstrap/dist/js/bootstrap.bundle.min';
