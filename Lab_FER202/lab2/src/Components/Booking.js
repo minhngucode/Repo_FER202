@@ -1,26 +1,29 @@
+import { Button, Form, Container, Row, Col } from 'react-bootstrap';
 const Booking = () => {
-    return (
-      <div className="container" style={{paddingBottom: "100px", marginTop: '50px'}}>
-        <h2 className="text-center">Book Your Table</h2>
-        <form>
-          <div className="row mb-3" style={{paddingBottom: '30px'}}>
-            <div className="col-md-4"><input type="text" className="form-control" placeholder="Your Name *" /></div>
-            <div className="col-md-4"><input type="email" className="form-control" placeholder="Your Email *" /></div>
-            <div className="col-md-4">
-              <select className="form-control">
-                <option>Select a Service</option>
-                <option>Dine In</option>
-                <option>Take Away</option>
-              </select>
-            </div>
-          </div>
-          <div className="mb-3">
-            <textarea className="form-control" placeholder="Please write your comment"></textarea>
-          </div>
-          <button className="btn btn-warning">Send Message</button>
-        </form>
-      </div>
-    );
-  };
+  return (
+    <Container className="py-5">
+      <h2 className="text-center">Book Your Table</h2>
+      <Form>
+        <Row className="mb-3">
+          <Col md={4}><Form.Control type="text" placeholder="Your Name *" /></Col>
+          <Col md={4}><Form.Control type="email" placeholder="Your Email *" /></Col>
+          <Col md={4}>
+            <Form.Select>
+              <option>Select a Service</option>
+              <option>Dine In</option>
+              <option>Take Away</option>
+            </Form.Select>
+          </Col>
+        </Row>
+        <Form.Group className="mb-3">
+          <Form.Control as="textarea" placeholder="Please write your comment" />
+        </Form.Group>
+        <Button variant="warning">Send Message</Button>
+      </Form>
+    </Container>
+  );
+};
 
-  export default Booking;
+export default Booking;
+
+
