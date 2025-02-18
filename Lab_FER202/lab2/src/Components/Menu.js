@@ -18,11 +18,11 @@ const Menu = () => {
                     <Col md={3} key={index} className="mb-4">
                         <Card className="position-relative">
                             {item.tag && (
-                                <div className="position-absolute top-0 start-0 bg-warning text-dark p-2 rounded-pill" style={{ zIndex: 1 }}>
+                                <div className="position-absolute top-1 start-1 bg-warning text-dark p-2 badge rounded-pill" style={{ zIndex: 1 }}>
                                     {item.tag}
                                 </div>
                             )}
-                            <Card.Img variant="top" src={item.image} alt={item.name} />
+                            <Card.Img variant="top" src={item.image} alt={item.name} />``
                             <Card.Body className="text-center">
                                 <Card.Title>{item.name}</Card.Title>
                                 <Card.Text>

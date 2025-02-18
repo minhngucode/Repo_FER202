@@ -18,8 +18,25 @@ const Booking = () => {
         <Form.Group className="mb-3">
           <Form.Control as="textarea" placeholder="Please write your comment" />
         </Form.Group>
+        <Form>
+          <div className="mb-3">
+            <Form.Check 
+              inline
+              label="1"
+            />
+            <Form.Check
+              inline
+              label="2"
+            />
+            <Form.Check
+              inline
+              label="3"
+            />
+          </div>
+        </Form>
         <Button variant="warning">Send Message</Button>
       </Form>
+
     </Container>
   );
 };
