@@ -1,0 +1,108 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+:root {
+  --main-bg: linear-gradient(135deg, #74EBD5 0%, #9FACE6 100%);
+  --form-bg: #ffffff;
+  --button-bg: linear-gradient(135deg, #f082ea 0%, #c07dec 100%);
+  --button-hover-bg: linear-gradient(135deg, #c07dec 0%, #f082ea 100%);
+  --border-radius: 30px;
+}
+
+/* Toàn bộ trang có background gradient */
+body {
+  background: var(--main-bg);
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Container của React-Bootstrap */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: var(--form-bg);
+  border-radius: var(--border-radius);
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề form */
+h3.mb-3 {
+  text-align: center;
+  margin-bottom: 1.5rem !important;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Các trường input, select... */
+.form-control {
+  border-radius: var(--border-radius);
+  border: 2px solid #ccc;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hiệu ứng focus */
+.form-control:focus {
+  border-color: #5B86E5;
+  box-shadow: 0 0 5px rgba(91, 134, 229, 0.5);
+}
+
+/* Nút bấm */
+.btn-primary {
+  background: var(--button-bg);
+  border: none;
+  border-radius: var(--border-radius);
+  transition: background 0.3s ease;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+/* Hiệu ứng hover và focus cho nút */
+.btn-primary:hover,
+.btn-primary:focus {
+  background: var(--button-hover-bg);
+}
+
+/* Màu chữ lỗi */
+.invalid-feedback {
+  color: #e74c3c;
+  font-size: 0.9rem;
+}
