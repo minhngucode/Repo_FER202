@@ -49,20 +49,15 @@ function Ex6() {
       genderError === "" &&
       countryError === "" &&
       agreedError === ""
-    ) {
-      setIsFormValid(true);
-    } else {
-      setIsFormValid(false);
-    }
+    ) {setIsFormValid(true);} 
+    else {setIsFormValid(false);}
   }, [name, gender, country, agreed, nameError, genderError, countryError, agreedError]);
-
   const handleSubmit = (e) => {
     e.preventDefault();
     if (isFormValid) {
       setShowAlert(true);
     }
   };
-
   return (
     <Container className="mt-4">
       <h3 className="mb-3">Registration Form</h3>

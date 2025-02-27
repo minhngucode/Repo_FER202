@@ -1,0 +1,179 @@
+/* Tổng thể ứng dụng */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #f8f9fa, #e3f2fd);
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Chế độ tối */
+.dark-theme {
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+  color: white;
+}
+
+/* Container chính */
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Header */
+.App-header {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Chế độ tối */
+.dark-theme {
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+  color: white;
+}
+
+/* Tìm kiếm */
+.search-bar {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  display: block;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Xác nhận đơn hàng */
+.order-btn {
+  background: linear-gradient(to right, #28a745, #218838);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.order-btn:hover {
+  background: linear-gradient(to right, #218838, #1e7e34);
+  transform: scale(1.05);
+}
+
+/* Giới hạn chiều cao Theme */
+.theme-container {
+  min-height: 60vh; /* Giới hạn tối đa 60% chiều cao màn hình */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dish-card {
+  background: linear-gradient(to right, #ffffff, #f1f2f6);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dish-card:hover {
+  transform: scale(1.03);
+  background: linear-gradient(to right, #fffcf2, #f8f9fa);
+}
+
+/* Nút chuyển đổi theme */
+.theme-toggle-btn {
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.theme-toggle-btn:hover {
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  transform: scale(1.05);
+}
+
+/* Nút chuyển đổi theme */
+.theme-toggle-btn {
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.theme-toggle-btn:hover {
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  transform: scale(1.05);
+}
+
+/* Danh sách món ăn */
+.dish-card {
+  background: linear-gradient(to right, #ffffff, #f1f2f6);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.dish-card:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #fffcf2, #f8f9fa);
+}
+
+/* Giỏ hàng */
+.cart {
+  background: linear-gradient(to right, #ffffff, #e3f2fd);
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.cart-item button {
+  background: linear-gradient(to right, #ff5a5f, #ff7b72);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-item button:hover {
+  background: linear-gradient(to right, #ff7b72, #ff9a9e);
+}
+
+/* Nút xóa giỏ hàng */
+.clear-cart-btn {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.clear-cart-btn:hover {
+  background: linear-gradient(to right, #ff4b2b, #ff7979);
+  transform: scale(1.05);
+}
